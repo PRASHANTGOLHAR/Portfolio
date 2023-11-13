@@ -440,7 +440,7 @@ footer p:nth-child(2) {
 }
 @media (min-width:0px) and (max-width:1118px){
     .card3 {
-        height: 200px;
+        height: 220px;
         width: 335px;
         padding: 10px 10px;
         background: #2b2b2b;
