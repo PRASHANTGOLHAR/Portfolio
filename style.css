@@ -126,7 +126,7 @@ body{
         
 
         /* Mobile application  */
-        @media (max-width: 800px) {
+        @media (max-width: 1400px) {
 
             /* Navbar  */
             .navbar :is(.menu-btn, .links .close-btn) {
