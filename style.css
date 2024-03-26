@@ -126,7 +126,7 @@ body{
         
 
         /* Mobile application  */
-        @media (max-width: 1400px) {
+        @media (max-width: 999px) {
 
             /* Navbar  */
             .navbar :is(.menu-btn, .links .close-btn) {
@@ -347,6 +347,7 @@ body{
             /* Project  *//* intern  */
             .container1{
                 display: flex;
+                flex-direction: column;
                 /* width: 100%; */
                 padding: 4%;
                 
@@ -354,7 +355,6 @@ body{
                 justify-content: center;
                 text-align: center;
                 align-items: center;
-                flex-direction: column;
                 /* gap: 20px; */
                 
             }
@@ -388,6 +388,9 @@ body{
                 background-color: black;
                 flex-direction: column !important;
                 padding: 2% 5%;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
                 /* max-width: 300px !important; */
                }
                .col1{
@@ -395,6 +398,7 @@ body{
                 
                 background-color: rgb(41, 40, 40);
                 /* min-width: 320px; */
+                max-width: 400px;
                 overflow: hidden;
                 background-size: cover;
                 background-repeat: no-repeat;
