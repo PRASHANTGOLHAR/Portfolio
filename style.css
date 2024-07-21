@@ -65,7 +65,7 @@ body{
         font-size: 1rem;
         font-weight: 500;
     }
-
+    
     .navbar .links a:hover {
         color: rgb(247, 5, 126) !important;
         border: none !important;
@@ -142,6 +142,11 @@ body{
         margin-bottom: 20px;
     }
     a:hover {
+        background-color: transparent;
+        /* border: 2px solid #f9004d; */
+        cursor: pointer;
+    }
+    .cv:hover {
         background-color: transparent;
         border: 2px solid #f9004d;
         cursor: pointer;
@@ -408,16 +413,16 @@ body{
         
     }
     .skills ul li{
-        border-bottom: 2px solid rgb(7, 247, 7);
+        /* border-bottom: 2px solid rgb(7, 247, 7); */
         color: rgb(7, 247, 7);
         margin-bottom: 10px;
     }
-    .skills ul li:hover{
+    /* .skills ul li:hover{
         color: yellow;
         cursor: pointer;
         border-bottom: 2px solid #f9007c;
 
-    }
+    } */
 
     @media (max-width: 950px){
         .skills{
@@ -869,13 +874,19 @@ body{
        }
 
     }
-
+    @media screen and (Max-width: 700px){
+        iframe{
+            height: 150px !important;
+        }
+        
+    }
 /* Footer  */
 
     footer{
         display: flex;
         align-items: center;
         text-align: center;
+        flex-direction: column;
         justify-content: center;
         background-color: rgb(222, 14, 118);
         padding: 10px;
