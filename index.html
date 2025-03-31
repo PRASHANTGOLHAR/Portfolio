@@ -18,8 +18,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/LATEST-VERSION">
     <link rel="stylesheet" href="style.css">
+    
+
 </head>
 
+<style>
+  
+    
+    /* Animation styles */
+    #typing-animation {
+      position: relative;
+      font-size: 30px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 3s steps(20, end) infinite;
+    }
+    
+    #typing-animation:before {
+      content: "";
+      /* position: absolute; */
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: #ccc;
+      animation: typing-cursor 0.5s ease-in-out infinite;
+    }
+    
+    
+    </style>
 <body>
 
     <!-- Header  -->
@@ -49,7 +78,7 @@
         <div class="headline">
 
             <marquee behavior="smooth" direction="left">Welcome to my Portfolio <img src="new.gif" alt=""> | Last update
-                Nov 2024 | I recently received NPTEL stars from IIT Madras <img src="new.gif" alt="">| I am looking for an internship/Job (Onsite or hybrid ) | If any
+                on March 2025 | I recently received NPTEL stars from IIT Madras <img src="new.gif" alt="">| I am looking for an internship/Job (Onsite or hybrid ) | If any
                 opprtunity their please contact <img src="new.gif" alt=""> | Use desktop for better understanding | Thank You
                 for visiting. </marquee>
         </div>
@@ -60,15 +89,50 @@
     <div class="home">
         <img class="image" src="photo1.png" width="200px" alt="">
         <p class="person"><b>PRASHANT </b><span><b>GOLHAR</b></span></p>
-        <p class="person"><b>Software Developer </b>| <span style="color:rgb(242, 255, 4)"><b>Frontend
-                    Developer</b></span></p>
+        <span id="typing-animation"></span>
+        <script>
+
+            // Initialize the typing animation
+            const typingAnimationElement = document.getElementById('typing-animation');
+
+            // Create an array of typing text
+            const typingTexts = [
+            'Java Full Stack Developer',
+            'B.Tech ',
+            'Computer Science and Engineering   ',
+            'CGPA : 8.28/10',
+            ];
+
+            // Create a function to display the typing animation for a given text
+            function playTypingAnimation(text) {
+            // Loop through each character and add it to the element
+            for (let i = 0; i < text.length; i++) {
+                setTimeout(() => {
+                typingAnimationElement.textContent += text[i];
+                }, i * 200); // Increase the delay to slow down the typing animation
+            }
+
+            // Once the animation is complete, reset the text and start over
+            setTimeout(() => {
+                typingAnimationElement.textContent = '';
+                playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+            }, text.length * 200);
+            }
+
+            // Start the typing animation loop
+            playTypingAnimation(typingTexts[0]);
+
+            </script>
+        <!-- <p class="person"><b>Software Developer </b>| <span style="color:rgb(242, 255, 4)"><b>Frontend -->
+                    <!-- Developer</b></span></p> --> <br>
         <a href="PRASHANT GOLHAR.pdf" class="cv" target="_blank"><b>Download CV </b>
             <div class=" fa  fa-download"></div>
         </a><br><br>
-        <p class="text1">I am Pursuing B.Tech in Computer Science and Engineering (Sem VII). Proficiency in Web
-            Development
-            (HTML5,CSS3, Bootstrap5.3, JS) and cloud computing. Currently looking for development opportunities
-            with exponential learning curve in growing and fast paced environment.
+        <p class="text1">Enthusiastic and driven B.Tech final-year (SEM VIII) student specializing in Computer Science and Engineering, Java Full Stack Development, with a
+strong foundation in backend and frontend technologies. Recognized as an NPTEL Star Nominee, showcasing dedication to continuous learning and
+excellence. Passionate about Artificial Intelligence and eager to thrive in a fast-paced, growth-driven environment. Adept at problem-solving,
+developing scalable applications, and collaborating in dynamic teams. Committed to leveraging technology to drive innovation and achieve
+exponential career growth in AI and software development.
         </p>
 
     </div>
@@ -119,21 +183,19 @@
     <div class="skills">
         <h5>Skills</h5>
         <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JS</li>
-            <li>Java</li>
-            <li>DevOps</li>
-            <li>C</li>
-            <li>Bootstrap</li>
-            <li>Github</li>
+            <li>Fronted Technology : <span> HTML, CSS, JS, BOOTSTRAP. </span></li>
+            <li>Backend Technology : <span> Java, JS.</span></li>
+            <li>Database Management : <span> MySQL, PostgreSQL, SQL Server. </span></li>
+            <li>Programming & Scripting : <span> Java, SQL. </span></li>
+            <li>Soft Skills : <span> Problem-Solving, Critical Thinking, GitHub, Linkedin.</span></li>
+            
         </ul>
     </div>
 
     <!-- Contact  -->
     <div class="contact">
 
-        <h5>For more Contact Me !!!</h5>
+        <h5>Find me on !</h5>
         <div class="socialmedia">
             <a href="tel: +91 8308797973" target="_blank"><i class=" fa fa-brands fa-phone"></i></a>
             <a href="https://wa.me/918308797973" target="_blank"><i class=" fa fa-brands fa-whatsapp"></i></a>

@@ -410,11 +410,14 @@ body{
         display: flex;
         list-style: none;
         gap: 20px;
+        text-align: justify;
+        flex-direction: column;
         
     }
     .skills ul li{
+        /* padding-left: 35%; */
         /* border-bottom: 2px solid rgb(7, 247, 7); */
-        color: rgb(7, 247, 7);
+        /* color: #f9007c; */
         margin-bottom: 10px;
     }
     /* .skills ul li:hover{
